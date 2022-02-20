@@ -15,8 +15,8 @@
 |質問を削除する	| DELETE | /questions/question_id | questions#destroy |
 |回答する		| POST | /questions/question_id/answers | answers#create |
 |ユーザー一覧を表示する	| GET | /users | users#index |		
-|管理画面用のログインページを表示する	| GET | /admin/login | admin#login |	
-|（管理画面）質問一覧ページを表示する	| GET | /admin/questions | questions/index |
-|（管理画面）質問を削除する			| DELETE | /admin/questions/question_id | questions#destroy |
-|（管理画面）ユーザー一覧ページを表示する	| GET | /admin/users | users#index |	
-|（管理画面）ユーザーを削除する | DELETE | /admin/users/:id | users#destroy |
+|管理画面用のログインページを表示する	| GET | /admin/login | admin#sessions#new |	
+|（管理画面）質問一覧ページを表示する	| GET | /admin/questions | admin#questions/index |
+|（管理画面）質問を削除する			| DELETE | /admin/questions/question_id | admin#questions#destroy |
+|（管理画面）ユーザー一覧ページを表示する	| GET | /admin/users | admin#users#index |	
+|（管理画面）ユーザーを削除する | DELETE | /admin/users/:id | admin#users#destroy |
